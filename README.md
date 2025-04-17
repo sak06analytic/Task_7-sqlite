@@ -14,6 +14,7 @@ This project performs data analysis on sales data to generate visualizations and
 - pandas
 - matplotlib
 - sqlite3
+  
 
 ## Key Features
 - **Data Analysis**: Summarizes sales data by product, category, and region.
