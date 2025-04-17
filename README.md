@@ -20,11 +20,10 @@ This project performs data analysis on sales data to generate visualizations and
 - **Visualizations**: Generates charts to visualize sales performance (e.g., revenue per product).
 - **SQL Database**: Data is stored and managed in an SQLite database.
 
-
-  # python code
+## python code
 1. Pie chart
 print(df)
-# Pie Chart Visualization
+# Pie Chart 
 plt.figure(figsize=(8,8))  # You can adjust the size of the chart
 plt.pie(df['revenue'], labels=df['product'], autopct='%1.1f%%', startangle=90)
 plt.title("Revenue Distribution by Product") 
