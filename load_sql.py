@@ -19,7 +19,7 @@ conn = sqlite3.connect(db_path)
 cursor = conn.cursor()
 cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
 tables = cursor.fetchall()
-print("📋 Tables in DB:", tables)
+print(" Tables in DB:", tables)
 
 #  SQL query on 'superstore' table
 query = """
