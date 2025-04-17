@@ -7,10 +7,10 @@ import os
 db_path = r'C:\Users\saksh\OneDrive\Desktop\.database\sales_data.db' 
 
 if not os.path.exists(db_path):
-    print(" Database file NOT found at:", db_path)
+    print(" Database file NOT found", db_path)
     exit()
 else:
-    print(" Database file FOUND!")
+    print(" Database file found")
 
 #  Connect to the database
 conn = sqlite3.connect(db_path)
@@ -23,14 +23,12 @@ print(" Tables in DB:", tables)
 
 #  SQL query on 'superstore' table
 query = """
-SELECT 
+select
     product, 
-    SUM(quantity) AS total_qty, 
+    SUM(quantity) AS total_quantity, 
     SUM(quantity * price) AS revenue 
-FROM 
-    superstore 
-GROUP BY 
-    product;
+from  superstore 
+group by  product;
 """
 
 #  query and  DataFrame
